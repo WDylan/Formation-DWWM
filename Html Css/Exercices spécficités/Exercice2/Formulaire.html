@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Nous lançons une grande enquête sur les anciens stagiaires</h1>
+    <h6>Merci de nous répondre</h6><br>
+
+    <form class="container">
+        <fieldset>
+            <legend>Votre identité</legend>
+            <div class="space">
+                <label>Mr
+                    <input type="radio" value="Mr" name="genre" />
+                </label>
+                <label>Mme
+                    <input type="radio" value="Mme" name="genre" />
+                </label>
+            </div>
+            <div class="space">
+                <label for="Nom">Votre nom :</label>
+                <input type="text" placeholder="Nom" name="Nom" />
+            </div>
+            <div class="space">
+                <label for="Prenom">Votre prénom :</label>
+                <input type="text" placeholder="Prenom" name="Prenom" />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Vos informations personnelles</legend>
+            <div class="space">
+                <label for="Date">Votre date de naissance</label>
+                <input type="date" name="Date">
+            </div>
+            <div class="space">
+                <label for="Adresse">Votre adresse</label>
+                <input type="text" placeholder="Adresse" name="Adresse">
+            </div>
+            <div class="space">
+                <label for="Ville">Votre ville</label>
+                <input type="text" placeholder="Ville" name="Ville">
+            </div>
+            <div class="space">
+                <label for="CodePostal">Votre code postal</label>
+                <input type="text" placeholder="Code postal" name="CP">
+            </div>
+            <div class="space">
+                <label for="Mail">Votre E-mail</label>
+                <input type="email" placeholder="Email" name="Email">
+            </div>
+            <div class="space">
+                <label for="Mail">Votre numéro de téléphone</label>
+                <input type="tel" placeholder="Telephone" name="Telephone">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Votre situation professionnelles post formation</legend>
+            <div class="space">
+                <label for="Emploi">Sélectionnez votre emploi</label>
+                <select class="space">
+                    <option disabled>Emploi</option>
+                    <option value="Developpeur">Developpeur</option>
+                    <option value="Commercial">Commercial</option>
+                    <option value="Assistant de direction">Assistant de direction</option>
+                    <option value="Autre">Autre</option>
+                </select>
+            </div>
+            <div class="space">
+                <label for="Reponse">Si vous avez répondu autre, précisez</label>
+                <input type="text" placeholder="..." name="Reponse">
+            </div>
+            <div class="space">
+                <label for="Remu">Votre niveau de rémunération</label>
+                <select class="space">
+                    <option value="1000€"> <1000€ </option>
+                    <option value="2000"> Entre 1000€ et 2000€</option>
+                    <option value="5000"> Entre 2000€ et 5000€</option>
+                    <option value="beaucoup">Beaucoup trop</option>
+                </select>
+            </div>
+            <div class="space">
+                <label for="Annee">En quelle année avez-vous suivi votre formation SOFIP</label>
+                <input type="year" placeholder="2022" name="Annee">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Exprimez-vous</legend>
+            <div class="space">
+                <label for="Commentaires" name="Commentaires">Vos commentaires</label>
+                <input type="text" name="texte">
+            </div>
+        </fieldset>
+        <div>
+            <h4>Merci d'avoir répondu au questionnaire</h4>
+        </div>
+        <div class="space">
+            <input type="submit" value="Valider"/>
+            <button type="reset">Annuler</button>
+        </div>
+        $_POST[Nom, Prenom]
+    </form>
+</body>
+
+</html>

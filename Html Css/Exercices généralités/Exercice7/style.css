@@ -1,0 +1,37 @@
+.containerPrincipal {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,300px);
+    gap: 100px;
+    padding: 30px;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding-bottom: 15px;
+}
+
+.Eiffel {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.Christ {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.Liberté {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.Opera {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+

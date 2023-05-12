@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+#backgroundImg {
+    background-image: url(https://www.w3.org/html/logo/downloads/HTML5_Badge_256.png);
+    background-repeat: space;
+    height: 900px;
+    width: auto;
+}
+
+#bold {
+    font-weight: bolder;
+}
+
+#ligne {
+    background-color: black;
+    size: 80px;
+}

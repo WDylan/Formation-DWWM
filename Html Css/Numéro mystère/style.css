@@ -1,0 +1,55 @@
+.card {
+    width: 70vh;
+    padding: 30px;
+    margin: 50px auto;
+    color: #83764F;
+    text-align: center;
+}
+
+.card.title {
+    font-size: 45px;
+
+    text-align: center;
+}
+
+#ligne1,
+#ligne2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+}
+
+#nbUser {
+    font-size: 30px;
+    padding-left: 15px;
+    width: 65px;
+}
+
+#nbCoups {
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+.bouton {
+    font-size: 30px;
+    color: #83764F;
+    background-color: #94AF9F;
+    margin-left: 20px;
+}
+
+.saisie {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+
+.replay {
+    margin-top: 25px;
+    font-size: 30px;
+}
+
+.middle {
+    vertical-align: middle;
+}

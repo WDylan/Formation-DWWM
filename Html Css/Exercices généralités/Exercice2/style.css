@@ -1,0 +1,54 @@
+.centre {
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+}
+
+.styleType1 {
+    list-style-type: lower-alpha;
+}
+
+.styleType2 {
+    list-style-type: lower-alpha;
+
+}
+
+.styleType3 {
+    list-style-type: decimal;
+}
+
+.styleType4 {
+    list-style-type: upper-roman;
+}
+
+.styleType5 {
+    list-style-type: disc;
+}
+
+.styleType6 {
+    list-style-type: circle;
+}
+
+.styleType7 {
+    list-style-type: square;
+}
+
+.styleType8 {
+    list-style-type: disc;
+}
+
+.styleType9 {
+    list-style-type: circle;
+}
+
+.styleType10 {
+    list-style-type: square;
+}
+
+.styleType11 {
+    list-style-type: square;
+}
