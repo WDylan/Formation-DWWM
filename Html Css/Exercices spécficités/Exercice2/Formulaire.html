@@ -13,7 +13,7 @@
     <h1>Nous lançons une grande enquête sur les anciens stagiaires</h1>
     <h6>Merci de nous répondre</h6><br>
 
-    <form class="container">
+    <form class="container" >
         <fieldset>
             <legend>Votre identité</legend>
             <div class="space">
@@ -26,11 +26,12 @@
             </div>
             <div class="space">
                 <label for="Nom">Votre nom :</label>
-                <input type="text" placeholder="Nom" name="Nom" />
+                <input type="text" placeholder="Nom" name="Nom" pattern="^[( )a-zA-Z]+$">
+                <span>Veuillez entrer uniquement des lettre</span>
             </div>
             <div class="space">
                 <label for="Prenom">Votre prénom :</label>
-                <input type="text" placeholder="Prenom" name="Prenom" />
+                <input type="text" placeholder="Prenom" name="Prenom" pattern="^[( )a-zA-Z]+$" />
             </div>
         </fieldset>
         <fieldset>
@@ -45,11 +46,11 @@
             </div>
             <div class="space">
                 <label for="Ville">Votre ville</label>
-                <input type="text" placeholder="Ville" name="Ville">
+                <input type="text" placeholder="Ville" name="Ville" pattern="^[( )a-zA-Z]+$">
             </div>
             <div class="space">
                 <label for="CodePostal">Votre code postal</label>
-                <input type="text" placeholder="Code postal" name="CP">
+                <input type="text" placeholder="Code postal" name="CP" required minlength="5" maxlength="5">
             </div>
             <div class="space">
                 <label for="Mail">Votre E-mail</label>
@@ -57,7 +58,7 @@
             </div>
             <div class="space">
                 <label for="Mail">Votre numéro de téléphone</label>
-                <input type="tel" placeholder="Telephone" name="Telephone">
+                <input type="tel" placeholder="Telephone" name="Telephone" required maxlength="12">
             </div>
         </fieldset>
         <fieldset>
@@ -79,7 +80,8 @@
             <div class="space">
                 <label for="Remu">Votre niveau de rémunération</label>
                 <select class="space">
-                    <option value="1000€"> <1000€ </option>
+                    <option value="1000€">
+                        <1000€ </option>
                     <option value="2000"> Entre 1000€ et 2000€</option>
                     <option value="5000"> Entre 2000€ et 5000€</option>
                     <option value="beaucoup">Beaucoup trop</option>
@@ -101,10 +103,9 @@
             <h4>Merci d'avoir répondu au questionnaire</h4>
         </div>
         <div class="space">
-            <input type="submit" value="Valider"/>
+            <input type="submit" value="Valider" />
             <button type="reset">Annuler</button>
         </div>
-        $_POST[Nom, Prenom]
     </form>
 </body>
 
