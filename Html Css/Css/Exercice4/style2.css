@@ -1,52 +1,16 @@
-#menu {
-    display: flexbox;
-    margin: 25px;
-    padding: 0;
-    font: bold 1em "georgia", verdana;
-    list-style-type: none;
-    position: relative;
-    top: 50px;
-}
-
-#menu a {
-    color: #508768;
-    text-decoration: none;
-}
-
-#menu a:hover,
-#menu a:focus {
-    color: #BDD7B5;
-}
-
-#menu a {
-    margin-top: 25px;
-    margin-right: 50px;
-    display: block;
-    color: #508768;
-    background-color: #bdd7b5;
-    text-decoration: none;
-    line-height: 2em;
-    width: 80%;
-    border: 1px solid blue;
-    text-align: center;
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    box-shadow: 8px 8px 12px #aaa;
-    -moz-box-shadow: 8px 8px 12px #aaa;
-    -webkit-box-shadow: 8px 8px 12px #aaa;
-
-}
-
 body {
     background-color: #C6C0A0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
 }
 
+#main_container {
+    /* display: flex;
+    align-items: center;
+    flex-flow: row ; */
+}
 
 h2 {
     color: #7D775C;
@@ -82,7 +46,9 @@ li {
 }
 
 .container {
-    padding-right: 150px;
+    float: right;
+    margin-left: 1rem;
+    margin-right: 1rem;
     background-color: antiquewhite;
     padding: 25px 15px;
     border-radius: 10px;
@@ -91,4 +57,44 @@ li {
     box-shadow: 8px 8px 12px #aaa;
     -moz-box-shadow: 8px 8px 12px #aaa;
     -webkit-box-shadow: 8px 8px 12px #aaa;
+}
+
+#menu {
+    float: left;
+    padding-left: 7px;
+    margin: 5rem;
+    /* padding: 3rem; */
+    font: bold 1em "georgia", verdana;
+    list-style-type: none;
+}
+
+#menu a {
+    color: #508768;
+    text-decoration: none;
+}
+
+#menu a:hover,
+#menu a:focus {
+    color: #BDD7B5;
+}
+
+#menu a {
+    display: block;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+    color: #508768;
+    background-color: #bdd7b5;
+    text-decoration: none;
+    line-height: 2em;
+    width: 80%;
+    border: 1px solid blue;
+    text-align: center;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 8px 8px 12px #aaa;
+    -moz-box-shadow: 8px 8px 12px #aaa;
+    -webkit-box-shadow: 8px 8px 12px #aaa;
+
 }
