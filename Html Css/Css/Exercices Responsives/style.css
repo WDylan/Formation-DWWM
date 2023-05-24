@@ -11,7 +11,7 @@ body {
     height: 100%;
     margin: 0;
     padding-left: 2rem;
-    background: #e0e8f1;
+    background: linear-gradient(0.25turn, rgba(110, 116, 121, 0.945), rgb(243, 188, 197));
 }
 
 img {
@@ -57,7 +57,6 @@ nav ul li {
     display: inline-block;
     text-align: center;
     background: #eee;
-    /* text-align: center; */
     font-size: 1rem;
     margin: 0.2em;
     box-shadow: 0.1rem 0.1rem 0.1rem rgb(63, 138, 209);
