@@ -28,12 +28,12 @@ header h1 {
 }
 
 header h1 span {
-    border: solid rgb(63, 138, 209);
+    border: ridge rgb(63, 138, 209) 0.2em;
 }
 
 nav {
     display: flex;
-    align-items: center;
+    justify-content: space-around;
     width: 100%;
     background: linear-gradient(0.25turn, rgb(243, 188, 197), rgba(110, 116, 121, 0.945));
     margin-bottom: 2rem;
@@ -98,8 +98,10 @@ nav ul li:hover {
 }
 
 #gallery a:hover {
-    transition: all 0.3s ease-in-out;
-    transform: scale(0.9) rotate (-5deg);
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    /* transform: translateY(-0.2em) translateX(-0.2em); */
+    transform: rotate(5deg);
 }
 
 main {
@@ -126,6 +128,30 @@ main {
     text-align: justify;
 }
 
+@media screen and (min-width:551px) and (max-width:780px) {
+
+    html,
+    body {
+        font-size: 15px;
+    }
+
+    nav {
+        max-height: 90px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
+    main {
+        width: 70%;
+        height: 43em;
+    }
+
+    #gallery {
+        width: 27%;
+        height: 43em;
+    }
+}
 
 @media screen and (max-width:550px) {
 
@@ -164,31 +190,5 @@ main {
 
     #gallery a:nth-child(n+2) {
         margin-left: 0;
-    }
-}
-
-
-@media screen and (min-width:551px) and (max-width:780px) {
-
-    html,
-    body {
-        font-size: 15px;
-    }
-
-    nav {
-        max-height: 90px;
-        overflow-x: auto;
-        overflow-y: hidden;
-        white-space: nowrap;
-    }
-
-    main {
-        width: 70%;
-        height: 43em;
-    }
-
-    #gallery {
-        width: 27%;
-        height: 43em;
     }
 }
