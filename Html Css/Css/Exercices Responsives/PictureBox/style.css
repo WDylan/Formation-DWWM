@@ -14,11 +14,6 @@ body {
     background: linear-gradient(0.25turn, rgba(110, 116, 121, 0.945), rgb(243, 188, 197));
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 #wrapper {
     width: 95%;
 }
