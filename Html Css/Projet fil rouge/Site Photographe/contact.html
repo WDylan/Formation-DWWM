@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/style.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <a href="./accueil.html">
+                    Logo ??
+                </a>
+                <a href="./accueil.html">
+                    Accueil
+                </a>
+                <a href="./contact.html">
+                    Contact
+                </a>
+                <ul class="mylangue">
+                    <li>
+                        <a role="button">
+                            <span class="" title="Changer de langue"></span>
+                        </a>
+                        <div>
+                            <a href="">Français</a>
+                            <a href="">English</a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="./connexion.html">
+                    Connexion
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <h1>page de contact</h1>
+    <div class="container_contact">
+        <form>
+            <fieldset>
+                <legend> Formulaire </legend>
+                <!-- Input type Radio (Selection unique) -->
+                <div class="space">
+                    <label>
+                        Mr
+                        <input type="radio" value="Mr" name="genre" />
+                    </label>
+                    <label>
+                        Mme
+                        <input type="radio" value="Mme" name="genre" checked />
+                    </label>
+
+                    <label>
+                        Mlle
+                        <input type="radio" value="Mlle" name="genre" />
+                    </label>
+                </div>
+                <!-- Input type Text -->
+                <div class="space">
+                    <label for="Nom">Nom :</label>
+                    <input type="text" placeholder="Nom" name="Nom" />
+                </div>
+                <div class="space">
+                    <label for="Prenom">Prénom : </label>
+                    <input type="text" placeholder="Prénom" name="Prenom" />
+                </div>
+                <!-- Input type Date (datepicker) -->
+                <div class="space">
+                    <label for="Date">Date</label>
+                    <input type="date" name="Date" />
+                </div>
+                <div class="space">
+                    <label for="Description">Veuillez détailler votre demande</label>
+                    <textarea name="Description" cols="30" rows="10" placeholder="..." class="MyTextarea"></textarea>
+                </div>
+                <!-- Pour l'afichage des chevrons -->
+                <div class="space">
+                    <input type="submit" value="Valider" />
+                    <button type="reset">Annuler</button>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <footer>
+
+
+    </footer>
+</body>
+
+</html>

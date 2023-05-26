@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: whitesmoke;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: auto;
+    border-radius: 3px;
+    color: grey;
+    font-weight: bolder;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a {
+    padding-left: 15px;
+}
+
+body {
+    background-color: grey;
+}
+
+h1 {
+    text-align: center;
+    color: whitesmoke;
+    padding-bottom: 50px;
+}
+
+img {
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+table {
+    border: 2px ridge whitesmoke;
+    margin: auto;
+    text-align: center;
+}
+
+th {
+    border: 2px whitesmoke;
+    padding: 10px;
+}
+
+tr {
+    border: whitesmoke;
+}
+
+td {
+    margin: auto;
+    border: whitesmoke;
+    padding: 8px;
+}
+
+thead {
+    border: whitesmoke;
+}
+
+.mylangue {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color:
+        #007bff;
+}
+
+.mylangue ul,
+.mylangue li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.mylangue li {
+    position: relative;
+    display: block;
+    width: 5rem;
+}
+
+.mylangue div {
+    display: none;
+    position: absolute;
+}
+
+.mylangue:hover div {
+    display: block;
+}
+
+.mylangue div a {
+    display: block;
+    color:
+        #000;
+    background:
+        #fff;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+.mylangue div a:hover {
+    background:
+        #eee;
+}
+
+.mylangue li>a:after {
+    content: '\0025BE';
+    position: absolute;
+    right: 1.5rem;
+    top: 0.5rem;
+}
+
+.container_contact {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.space {
+    margin: 10px;
+}
+
+.MyTextAre {
+    resize: none;
+    width: 70%;
+}
+
+
+.img {
+    flex: 1;
+    height: 100%;
+    transform: skew(10deg);
+    cursor: pointer;
+    margin: 0 0.125em;
+    transition: all .3s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid pink;
+    position: relative;
+}
+
+p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: .75em;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: rotate(-90deg);
+    transform-origin: 0% 0%;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.main_box {
+    width: 90%;
+    height: 80vh;
+    display: flex;
+}
+
+.main_box:hover .img {
+    transform: skew(0);
+}
+
+.img:hover {
+    flex: 5;
+}
+
+.img:hover p {
+    background-color: transparent;
+    border: .125em solid blue;
+    color: rgb(255, 38, 0);
+    transform: rotate(0deg);
+}
+
+.container_img {
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,4 +1,4 @@
-body {
+/* body {
     background: linear-gradient(0.25turn, rgba(110, 116, 121, 0.945), rgb(243, 188, 197));
 
 }
@@ -40,15 +40,18 @@ li:hover {
 .float-start {
     border: 0.2em solid rgb(63, 138, 209);
     box-shadow: 0.1em 0.1em 0.1em rgb(63, 138, 209);
-    margin-top: 3em;
-    height: 45em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    height: 60em;
+    padding: auto;
 }
 
 .float-end {
     border: 0.2em solid rgb(63, 138, 209);
     box-shadow: 0.1em 0.1em 0.1em rgb(63, 138, 209);
-    margin-top: 3em;
-    height: 45em;
+    margin-top: 1.5em;
+    height: 60em;
+    padding: auto;
 }
 
 .image {
@@ -64,6 +67,7 @@ li:hover {
 
 #textImg {
     margin-top: 2em;
+    justify-content: center;
 }
 
 @media screen and (min-width:551px) and (max-width:780px) {
@@ -125,4 +129,4 @@ li:hover {
     .float-start a:nth-child(n+2) {
         margin-left: 0;
     }
-}
+} */
