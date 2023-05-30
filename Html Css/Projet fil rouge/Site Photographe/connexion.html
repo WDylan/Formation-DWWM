@@ -25,7 +25,7 @@
                 <ul class="mylangue">
                     <li>
                         <a role="button">
-                            <span class="" title="Changer de langue"></span>
+                            <span class="" title="Changer de langue">Langue</span>
                         </a>
                         <div>
                             <a href="">Français</a>
@@ -33,19 +33,34 @@
                         </div>
                     </li>
                 </ul>
-                <a href="./connexion.html">
+                <a class="connexion" href="./connexion.html">
                     Connexion
                 </a>
             </div>
         </nav>
     </header>
-
+    <h1>Page Connexion</h1>
     <div class="container_connexion">
-        <h1>Page Connexion</h1>
-    </div>
-    <footer>
+        <form>
+            <fieldset>
+                <legend> Connexion </legend>
+                <div class="space">
+                    <label for="Nom">Identifiant :</label>
+                    <input type="text" placeholder="Identifiant" name="id" />
+                </div>
+                <div class="space">
+                    <label for="Prenom">Mot de passe </label>
+                    <input type="text" placeholder="Mot de passe" name="mdp" />
+                </div class="">
+                    <input class="valider_connexion" type="submit" value="Valider" />
+                    <button type="reset">Annuler</button>
+                </div>
 
-    </footer>
+            </fieldset>
+        </form>
+        <footer>
+
+        </footer>
 
 </body>
 
