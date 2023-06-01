@@ -29,7 +29,7 @@ function StartGame() {
     //Génération du nombre mystere
     nbMystere = Math.floor(Math.random() * 50) + 1;
     //alert(nbMystere);
-
+ 
     // initialisation des champs HTML
     nbCoupsHTML.textContent = " " + nbCoups;
     ligne1.textContent = "J'ai généré un nombre entre 1 et 50 inclus";
