@@ -20,12 +20,21 @@ h1 {
     padding-top: 1.2em;
 }
 
+a {
+    padding-left: 2em;
+}
+
+
 /* Navbar */
+
+#closeBtn {
+    visibility: hidden;
+}
+
 .navbar {
     background-color: whitesmoke;
-    height: 6em;
+    height: 5em;
     width: 100%;
-    position: fixed;
     top: 0;
     left: 0;
 }
@@ -42,33 +51,58 @@ h1 {
 
 .navbar li {
     margin: 0;
+    padding-left: 1em;
 }
 
 .navbar li a {
     color: #af081c;
     text-decoration: none;
-    padding: 2em 3em;
+    padding: 1em 3em;
+    display: inline-block;
+    border-radius: 0.7em;
+}
+
+.navbar li a:hover {
+    background-color: #fb001f;
+}
+
+.navbar li button:hover {
+    background-color: lightgray;
+    border-radius: 0.7em;
+}
+
+.navbar .right {
+    margin-left: auto;
+}
+
+.navbar .language_button {
+    background-color: transparent;
+    color: grey;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.language_button:hover,
+.language_button:focus {
+    background-color: red;
+}
+
+.right {
+    position: relative;
     display: inline-block;
 }
 
+/* https://www.w3bai.com/fr/howto/howto_js_dropdown.html#gsc.tab=0*/
+
+.img_langue {
+    height: 2em;
+}
 
 .connexion {
     position: fixed;
     right: 0;
     padding-right: 2em;
-
-}
-
-.lien {
-    color: rgb(7, 6, 6);
-}
-
-.lien:hover {
-    color: #fb001f;
-}
-
-a {
-    padding-left: 15px;
 }
 
 /*Body */
@@ -318,4 +352,71 @@ p {
 .footer_link {
     flex: auto;
     margin-bottom: 1em;
+}
+
+.lien {
+    color: rgb(7, 6, 6);
+}
+
+.lien:hover {
+    color: #fb001f;
+}
+
+
+@media screen and (max-width:550px) {
+
+    .sidenav {
+        height: 100%;
+        width: 13em;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -20em;
+        background-color: #750b0b;
+        padding-top: 2em;
+        transition: left 0.5s ease;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #111;
+    }
+
+    #closeBtn {
+        visibility: visible;
+    }
+
+    .sidenav ul {
+        list-style-type: none;
+        margin: 0;
+        display: block;
+    }
+
+    .sidenav.active {
+        left: 0;
+    }
+
+    .sidenav .close {
+        position: absolute;
+        top: 0;
+        right: 0.4em;
+        font-size: 2em;
+    }
+
+    .burger_icon span {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+    }
+
 }

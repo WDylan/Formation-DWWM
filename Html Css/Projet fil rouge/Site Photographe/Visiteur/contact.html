@@ -11,34 +11,20 @@
 
 <body>
     <header>
-        <nav class="navbar">
-            <div>
-                <a class="lien" href="./accueil.html">
-                    Logo ??
-                </a>
-                <a class="lien" href="./accueil.html">
-                    Accueil
-                </a>
-                <a class="lien" href="./contact.html">
-                    Contact
-                </a>
-                <ul class="mylangue">
-                    <li>
-                        <a role="button">
-                            <span class="lien" title="Changer de langue">Langue</span>
-                        </a>
-                        <div>
-                            <a href="">Français</a>
-                            <a href="">English</a>
-                        </div>
-                    </li>
+        <nav>
+            <div class="navbar">
+                <ul>
+                    <a href="./accueil.html">Futur Logo</a>
+                    <li><a href="./accueil.html">Accueil</a></li>
+                    <li><a href="#">Gallerie</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li class="right button"><button class="language_button">FR</button></li>
+                    <li class="right"><a href="./connexion.html">Connexion</a></li>
                 </ul>
-                <a class="connexion lien" href="./connexion.html">
-                    Connexion
-                </a>
             </div>
         </nav>
     </header>
+
     <div class="main_container">
         <h1>Page contact</h1>
         <div class="container_contact">
@@ -46,54 +32,48 @@
                 Veuillez remplir le formulaire ci-dessous avec le plus de détails possible, afin de me transmettre votre
                 demande.
             </h4>
-            <form action="#" method="POST">
+            <form action="#">
                 <fieldset>
                     <legend> Formulaire </legend>
                     <div class="space">
                         <label class="radio">
                             Mr
-                            <input type="radio" value="Mr" name="genre" />
+                            <input type="radio" id="Mr" value="Mr" name="titre" checked />
                         </label>
                         <label class="radio">
                             Mme
-                            <input type="radio" value="Mme" name="genre" checked />
-                        </label>
-
-                        <label class="radio">
-                            Autre
-                            <input type="radio" value="Mlle" name="genre" />
+                            <input type="radio" id="Mme" value="Mme" name="titre" />
                         </label>
                     </div>
                     <div class="space">
                         <label class="label" for="nom">Nom :</label>
-                        <input class="champ" type="text" placeholder="Veuillez indiquer votre Nom" name="Nom"
-                            required />
+                        <input class="champ" id="nom" type="text" placeholder="Veuillez indiquer votre Nom" required />
                     </div>
                     <div class="space">
                         <label class="label" for="prenom">Prénom : </label>
-                        <input class="champ" type="text" placeholder="Veuillez indiquer votre Prénom" name="Prenom"
+                        <input class="champ" id="prenom" type="text" placeholder="Veuillez indiquer votre Prénom"
                             required />
                     </div>
                     <div class="space">
                         <label class="label" for="tel">Téléphone : </label>
-                        <input class="champ" type="tel" placeholder="Veuillez indiquer votre n°" name="Tel" required />
+                        <input class="champ" id="tel" type="tel" placeholder="Veuillez indiquer votre n°" required />
                     </div>
                     <div class="space">
                         <label class="label" for="email">Email : </label>
-                        <input class="champ" type="email" placeholder="Veuillez indiquer votre adresse Mail" name="Mail"
+                        <input class="champ" id="email" type="email" placeholder="Veuillez indiquer votre adresse Mail"
                             required />
                     </div>
                     <div class="space">
                         <label class="label" for="Date">Date de la prestation</label>
-                        <input class="champ" type="date" placeholder="Selectionner une Date" name="Date" />
+                        <input class="champ" id="date" type="date" placeholder="Selectionner une Date" />
                     </div>
                     <div class="space">
                         <label class="label" for="Description">Veuillez détailler votre demande</label>
-                        <textarea name="Description" cols="30" rows="10" placeholder="Information complémentaire"
+                        <textarea id="description" cols="30" rows="10" placeholder="Information complémentaire"
                             class="textAre" required></textarea>
                     </div>
                     <div class="space">
-                        <input type="submit" value="Envoyer" />
+                        <input type="submit" value="Envoyer" id="validerBtn" />
                         <button type="reset">Annuler</button>
                     </div>
 
@@ -147,6 +127,7 @@
             </div>
         </div>
     </footer>
+    <script src="./Js/main.js"></script>
 </body>
 
 </html>

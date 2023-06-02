@@ -12,18 +12,34 @@
 <body>
     <header>
         <nav>
-            <div class="navbar">
+            <div id="Sidenav" class="navbar sidenav">
                 <ul>
-                    <li><a href="./accueil.html">Futur Logo</a></li>
+                    <a id="closeBtn" href="#" class="close">x</a>
+                    <a href="./accueil.html">Futur Logo</a>
                     <li><a href="./accueil.html">Accueil</a></li>
                     <li><a href="#">Gallerie</a></li>
                     <li><a href="./contact.html">Contact</a></li>
-                    <li class="right"><button class="language_button">FR</button></li>
+                    <li class="right button">
+                        <button class="language_button">
+                            <img class="img_langue" src="./img/language_5.png" alt="">
+                    <li>FR</li>
+                    <li>EN</li>
+                    </button>
+                    </li>
                     <li class="right"><a href="./connexion.html">Connexion</a></li>
                 </ul>
             </div>
+
+            <a href="#" id="openBtn">
+                <span class="burger_icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
         </nav>
     </header>
+
     <div class="main_container">
         <h1>Page d'accueil</h1>
         <div class="container_img" onselectstart="return false" oncontextmenu="return false" ondragstart="return false">
@@ -103,6 +119,7 @@
             </div>
         </div>
     </footer>
+    <script src="./Js/main.js"></script>
 </body>
 
 </html>
