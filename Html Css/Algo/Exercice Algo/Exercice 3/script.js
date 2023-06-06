@@ -14,7 +14,7 @@ function lireEntier() {
 }
 
 lireEntier();
-let D = b * b - 4 * a * c;
+let D = Math.pow(b,2)- 4 * (a * c);
 
 if (D === 0) {
     var x = -b / (2 * a)
@@ -23,8 +23,8 @@ if (D === 0) {
 else if (D > 0) {
     let x1 = (-b + Math.sqrt(D)) / (2 * a),
         x2 = (-b - Math.sqrt(D)) / (2 * a);
-    console.log(`Il y a 2 soltuions : x1 = ${x1} et x2 = ${x2}`)
+    console.log(`Il y a 2 solutions : x1 = ${x1} et x2 = ${x2}`)
 }
 else {
-    console.error("Il n'y a pas de solutions pour cette équation")
+    console.log("Il n'y a pas de solutions pour cette équation")
 }
