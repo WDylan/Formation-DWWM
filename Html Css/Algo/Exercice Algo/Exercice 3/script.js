@@ -5,12 +5,11 @@ function lireEntier() {
         console.log(a)
     }
 
-    b = parseInt(prompt("Veuillez saisir un second nombre :"))
+    b = parseInt(prompt("Veuillez saisir la valeur de b :"))
     console.log(b)
 
-    c = parseInt(prompt("Veuillez saisir un troisième nombre :"))
+    c = parseInt(prompt("Veuillez saisir la valeur de c :"))
     console.log(c)
-
 }
 
 lireEntier();

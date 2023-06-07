@@ -11,10 +11,12 @@ function rechercherEntier(TabEntiers, X) {
     return -1;
 }
 
-let saisieUti = parseInt(prompt("Veuillez saisir un nombre dans le tableau : "));
+let saisieUti = parseInt(prompt("Veuillez saisir un nombre présent dans le tableau : "));
 let index = rechercherEntier(tab, saisieUti);
 if (index !== -1) {
-    console.log(`En recherchant la valeur ${saisieUti}, la fonction retourne la valeur ${index} : c'est le rang dans le tableau où elle a été trouvée.`)
+    console.log(`En recherchant la valeur ${saisieUti}, la fonction retourne la valeur 
+    ${index} : c'est le rang dans le tableau où elle a été trouvée.`)
 } else {
-    `En recherchant la valeur ${saisieUti}, la fonction ne retourne rien. L'élément n'est pas présent dans le tableau.`
+    console.error(`En recherchant la valeur ${saisieUti}, la fonction ne retourne rien. 
+    L'élément n'est pas présent dans le tableau.`)
 }
