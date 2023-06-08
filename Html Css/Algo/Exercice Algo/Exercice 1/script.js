@@ -1,21 +1,26 @@
 let N = 0,
     result = 0,
     i = 0;
+N = Number(prompt("Veuillez saisir un nombre : "));
 
-while (N <= 21) {
-    N = i;
-    i++;
-    result += N;
-    console.log(`N vaut ${N} le resultat attendu est ${result}`)
-}
+// Avec boucle Tant que Faire 
+// while (i <= N) {
+//     result = result + i;
+//     i++;
+//     console.log(`N vaut ${N} le resultat attendu est ${result}`)
+// }
 
-// let O = 0,
-//     resultat = 0,
-//     l = 0;
-
+// Avec boucle Répéter
 // do {
-//     O = l;
-//     l++;
-//     resultat += O;
-//     console.log(`O vaut ${O} le resultat attendu est ${resultat}`)
-// } while (O <= 21)
+//     result = result + i;
+//     i++;0
+// } while (i <= N) {
+//     console.log(`N vaut ${N} le resultat attendu est : ${result}`)
+// }
+
+
+// Avec boucle Pour
+for (i; i <= N; i++) {
+    result += + i
+    console.log(`N vaut ${N} le resultat attendu est : ${result}`)
+}
