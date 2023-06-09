@@ -25,7 +25,6 @@ if (N === 0 || N === 1) {
     console.log(`Le résultat avec répéter est : ${result}`)
 }
 
-
 // Avec méthode Pour
 // if (N == 0 || N == 1) {
 //     console.log(`Le résultat avec pour est ${result}`)

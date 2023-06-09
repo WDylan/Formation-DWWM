@@ -4,19 +4,19 @@ let N = 0,
 N = Number(prompt("Veuillez saisir un nombre : "));
 
 // Avec boucle Tant que Faire 
-// while (i <= N) {
-//     result = result + i;
-//     i++;
-//     console.log(`N vaut ${N} le resultat attendu est ${result}`)
-// }
+while (i <= N) {
+    result = result + i;
+    i++;
+    console.log(`N vaut ${N} le resultat attendu est ${result}`)
+}
 
 // Avec boucle Répéter
-// do {
-//     result = result + i;
-//     i++;0
-// } while (i <= N) {
-//     console.log(`N vaut ${N} le resultat attendu est : ${result}`)
-// }
+do {
+    result = result + i;
+    i++;
+} while (i <= N) {
+    console.log(`N vaut ${N} le resultat attendu est : ${result}`)
+}
 
 
 // Avec boucle Pour
