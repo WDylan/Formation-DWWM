@@ -194,7 +194,7 @@ textarea {
     height: 100px;
 }
 
-input[type="submit"] {
+button[type="submit"] {
     background-color: #4CAF50;
     color: white;
     margin-left: 1em;

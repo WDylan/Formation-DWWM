@@ -56,3 +56,6 @@ if (position === -1) {
 } else {
     console.log(`${x} se trouve à la position ${position} dans le tableau`);
 }
+
+
+h1.style.width = "70%";
